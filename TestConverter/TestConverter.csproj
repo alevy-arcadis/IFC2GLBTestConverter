@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net7.0-windows</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="glTFLoader" Version="1.0.0.3" />
+    <PackageReference Include="System.Configuration.ConfigurationManager" Version="7.0.0" />
+    <PackageReference Include="Xbim.Common" Version="5.1.341" />
+    <PackageReference Include="Xbim.Essentials" Version="5.1.341" />
+    <PackageReference Include="Xbim.Geometry" Version="5.1.437" />
+    <PackageReference Include="Xbim.Gltf.IO" Version="5.1.113" />
+    <PackageReference Include="Xbim.Ifc" Version="5.1.341" />
+    <PackageReference Include="Xbim.ModelGeometry.Scene" Version="5.1.437" />
+    <PackageReference Include="Xbim.WindowsUI" Version="5.1.228" />
+  </ItemGroup>
+
+</Project>
