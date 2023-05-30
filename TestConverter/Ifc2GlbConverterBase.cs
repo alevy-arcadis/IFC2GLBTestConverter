@@ -10,12 +10,12 @@ namespace conversionTest
 {
     internal static class Ifc2GlbConverterBase
     {
-        public static byte[] ConvertToGlb(byte[] ifcFile, double deflectionAngle = 100, double deflectionTolerance = 2, XbimSchemaVersion ifcVersion = XbimSchemaVersion.Ifc2X3)
+        public static byte[] ConvertToGlb(byte[] ifcFile, double deflectionAngle = 100, double deflectionTolerance = 1000, XbimSchemaVersion ifcVersion = XbimSchemaVersion.Ifc2X3)
         {
             using MemoryStream ms = new(ifcFile);
             return ConvertToGlb(ms, deflectionAngle, deflectionTolerance, ifcVersion);
         }
-        public static byte[] ConvertToGlb(Stream ifcFile, double deflectionAngle = 100, double deflectionTolerance = 2, XbimSchemaVersion ifcVersion = XbimSchemaVersion.Ifc2X3)
+        public static byte[] ConvertToGlb(Stream ifcFile, double deflectionAngle = 100, double deflectionTolerance = 1000, XbimSchemaVersion ifcVersion = XbimSchemaVersion.Ifc2X3)
         {
             byte[] glbFileBytes;
             Gltf gltf;
